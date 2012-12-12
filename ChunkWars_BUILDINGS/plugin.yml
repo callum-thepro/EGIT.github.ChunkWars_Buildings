@@ -1,0 +1,19 @@
+name: ChunkWars_Buildings
+version: 0.1
+main: com.hotmail.jeroenverstraelen.ChunkWars.MainBAge1
+commands:
+     BuyBuilding:
+      description: Buy a building.
+      usage: /buybuilding
+      permission: ChunkWars.Economy
+      permission-message: You don't have <permission>
+     BuildingPrice:
+      description: Get the price of a building.
+      usage: /buildingprice
+      permission: ChunkWars.Economy
+      permission-message: You don't have <permission>
+     BuildingList:
+      description: Get a list of all the buildings.
+      usage: /buildinglist
+      permission: ChunkWars.Economy
+      permission-message: You don't have <permission>
