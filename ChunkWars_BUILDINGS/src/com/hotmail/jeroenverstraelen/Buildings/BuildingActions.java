@@ -89,20 +89,8 @@ public class BuildingActions{
    	      }
    	      //SHUTDOWN
    	      else{
-     		int pos = FireLocDefined.indexOf(L);
-   		String strloc = FireLoc.get(pos);
 		BasicSchedulers BS = new BasicSchedulers(this.plugin);
-   		BS.NodeStopScheduler(1,strloc);
-   		YamlConfiguration FireConfig = YamlConfiguration.loadConfiguration(new File(DataFolder,"Fire.yml"));
-   		FireLocDefined.remove(pos);
-   		FireLoc.remove(pos);
-   		FireConfig.set("FireLoc",FireLoc);
-   		
-   		try {
-   			FireConfig.save(new File(DataFolder,"Fire.yml"));
-   		} catch (IOException e) {
-   			e.printStackTrace();
-   		}
+   		BS.NodeStopScheduler(1,loc);
    	    }
    	    }    }, time*20L, time*20L);
 
@@ -113,7 +101,10 @@ public class BuildingActions{
 	      }
 	
 	
-	   
+	 
+	
+	
+	
     //[2.0]
    if(BA==2){
 	}
